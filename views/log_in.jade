@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title || 'WebChat'
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1.0,width=device-width')
+  body
+    h1 Join a channel 
+    form(method='post', action='/sign-in')
+      fieldset
+        label(for='nickname') Nickname
+        input(name='nickname', type='text', placeholder='e.g: janedoe')
+        label(for='channel') Channel
+        input(name='channel', type='text', placeholder='e.g: software_engineering')
+      button(type='submit') Enter
