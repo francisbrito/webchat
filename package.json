@@ -4,7 +4,8 @@
   "description": "A minimalist web IRC client.",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.9.4"
+    "express": "^4.9.4",
+    "jade": "^1.7.0"
   },
   "devDependencies": {},
   "scripts": {
