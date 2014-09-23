@@ -6,6 +6,7 @@ html
     meta(name='viewport', content='initial-scale=1.0,width=device-width')
   body
     h1 Join a channel 
+    // TODO: Add CSRF prevention mechanism.
     form(method='post', action='/sign-in')
       fieldset
         label(for='nickname') Nickname
