@@ -1,12 +1,16 @@
-// Library imports.
-var express = require('express');
+# Library imports.
+express = require 'express'
 
-// Configuration.
-var port    = process.env.PORT || 3000;
+# Configuration.
+port    = process.env.PORT or 3000
 
-// Application setup.
-var app = express();
+# Application setup.
+app = express()
 
-app.listen(port);
+# Routing
+app.get '/', (request, response) ->
+  response.send 'It works!'
 
-console.log('Listening at port')
+app.listen port
+
+console.log "Listening at #{port}"
